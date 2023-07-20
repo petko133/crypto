@@ -1,0 +1,26 @@
+.navbar-transperant {
+	position: relative;
+  background: none;
+	overflow: visible;
+}
+
+h2 {
+  font-family: Helvetica;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-toggler-icon{
+	color: white!important;
+}
+
+.links {
+  color: white!important;
+  font-family: Helvetica;
+  font-size: 1.3rem;
+}
+
+.links :hover {
+  color: rgb(255, 201, 139);
+  transition: 0.5s;
+}

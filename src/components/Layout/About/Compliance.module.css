@@ -1,0 +1,20 @@
+.container{
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+	color: white;
+}
+
+.header{
+	color: white;
+	margin-bottom: 3rem;
+}
+
+.p-text{
+	color: white;
+	font-size: 1.4rem;
+}
+
+.compliance{
+	margin-top: 4rem;
+	height: 330px;
+}

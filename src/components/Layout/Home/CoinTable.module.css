@@ -1,0 +1,54 @@
+.coin-table {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.market-cap {
+  color: white;
+  margin-top: 6rem;
+}
+
+.table-image {
+  width: 50px;
+}
+
+.col-color {
+  vertical-align: middle;
+  --bs-table-color: white;
+  --bs-table-bg: var(--bs-table-bg);
+  --bs-table-border-color: #b8b8b8;
+}
+
+.header-color {
+  --bs-table-color: white;
+  background: -webkit-linear-gradient(90deg, #00aeff, #9900ff);
+  --bs-table-border-color: #a3a3a3;
+}
+
+.coin-name {
+  display: flex;
+  vertical-align: middle;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.p-margin {
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.links-red {
+  color: red;
+  text-decoration: none;
+}
+
+.links-green {
+  color: green;
+  text-decoration: none;
+}

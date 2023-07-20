@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useState } from 'react';
+import Navbar from './components/UI/Navbar';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SingleCoin from './Pages/SingleCoin';
+import Error from './Pages/Error';
+import Watchlist from './Pages/Watchlist';
+
+export const LoginContext = createContext();
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(
+    localStorage.token ? true : sessionStorage.token ? true : false
+  );
+
+  function changeLoggedIn(value) {
+    setLoggedIn(value);
+    if (value === false) {
+      localStorage.clear();
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LoginContext.Provider value={[loggedIn, setLoggedIn, changeLoggedIn]}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/about" element={<About />}></Route>
+          <Route exact path="/coin/:id" element={<SingleCoin />}></Route>
+          <Route exact path="/watchlist/:id" element={<Watchlist />}></Route>
+          <Route exact path="*" element={<Error />}></Route>
+        </Routes>
+      </Router>
+    </LoginContext.Provider>
   );
 }
 

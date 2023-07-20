@@ -1,0 +1,31 @@
+.container{
+	text-align: center;
+	color: white;
+	display: flex;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+	margin-bottom: 4rem;
+}
+
+.slogan {
+  background: -webkit-linear-gradient(0deg, #00d3ff, #af00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+	margin: 5rem 0;
+}
+
+.image{
+	rotate: -5deg;
+	margin-top: 5rem;
+	margin-right: 3rem;
+	margin-bottom: 5rem;
+	width: 470px;
+	height: 485px;
+}
+
+.slogan-text{
+	font-size: 1.5rem;
+}

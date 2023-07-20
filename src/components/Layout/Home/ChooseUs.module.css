@@ -1,0 +1,30 @@
+.slogan {
+  color: white;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+  font-size: 5rem;
+}
+
+.slogann {
+  background: -webkit-linear-gradient(0deg, #00d3ff, #af00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+}
+
+.container{
+	text-align: center;
+	color: white;
+}
+
+.row-style{
+	text-align: start;	
+}
+
+.image{
+	width: 300px;
+}
+
+.row-margin{
+	margin-bottom: 2rem;
+}

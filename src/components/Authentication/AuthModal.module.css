@@ -1,0 +1,30 @@
+.btn {
+  background-color: #3d98ff;
+  border-radius: 10px;
+  border: 1px solid #0089b3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 19px;
+  padding: 1px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #272b66;
+}
+.btn:hover {
+  background-color: #2a6bbf;
+  color: white;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.tabs {
+  font-size: large;
+  font-weight: 600;
+  /* background-color: #0089b3; */
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
