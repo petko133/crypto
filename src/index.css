@@ -1,3 +1,7 @@
+html, body{
+	overflow-x: hidden;
+	}
+
 body {
   /* background: linear-gradient(#e66465, 10%, #9198e5 25%, #9198e5 100%); */
   background: rgb(2, 0, 36);
